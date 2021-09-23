@@ -1,4 +1,4 @@
-name: Homologation Workspace
+name: Docker Build
 
 on:
   push:
@@ -8,7 +8,7 @@ env:
   DOCKER_IMAGE: ${{ secrets.DOCKER_HUB_USERNAME }}/packer
 jobs:
   build:
-    name: CI/CD
+    name: Docker
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
